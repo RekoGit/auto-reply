@@ -1,0 +1,19 @@
+{
+  "name": "Reply Helper",
+  "description": "リクエストの返信メッセージを自動で入力します",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://cafetalk.com/dashboard/tutor/requests/detail/?*req_id=*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
